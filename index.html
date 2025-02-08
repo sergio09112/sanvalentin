@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloc de Notas - San Valentín</title>
+    <style>
+        body {
+            background-image: url('https://www.publicdomainpictures.net/pictures/470000/velka/herzen-herz-muster-hintergrund-1660846240Xlf.jpg'); /* Aquí pon la URL de la imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 2em;
+            color: pink;
+        }
+        #image {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: pink;
+            color: white;
+            border: none;
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+        #reload {
+            margin-top: 20px;
+            font-size: 1em;
+            background-color: lightblue;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #reload:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>¿QUIERES SER MI SAN VALENTÍN MI CELES? 💗💗</h1>
+
+    <img id="image" src="https://i.pinimg.com/originals/47/6b/85/476b85783b816fef1d2c56ebe247cc0f.gif" alt="Imagen de San Valentín"> <!-- Cambia la URL por la imagen de San Valentín -->
+
+    <div class="button-container">
+        <button class="button" id="yesButton">Sí</button>
+        <button class="button" id="noButton">No</button>
+    </div>
+
+    <div id="response"></div>
+
+    <button id="reload" style="display:none" onclick="window.location.reload()">Volver a cargar la página</button>
+
+    <script>
+        const yesButton = document.getElementById('yesButton');
+        const noButton = document.getElementById('noButton');
+        const responseDiv = document.getElementById('response');
+        const reloadButton = document.getElementById('reload');
+
+        yesButton.addEventListener('click', () => {
+            responseDiv.innerHTML = 'TE AMO MUCHOTE MI NIÑA, NO TE ARREPENTIRAS 💖💖';
+            reloadButton.style.display = 'block';
+        });
+
+        noButton.addEventListener('click', () => {
+            responseDiv.innerHTML = '😢😢 (DI QUE SI PUE, VALDRA LA PENA MI AMOR) ';
+            reloadButton.style.display = 'block';
+        });
+    </script>
+
+</body>
+</html>
